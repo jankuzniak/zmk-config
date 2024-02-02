@@ -85,14 +85,5 @@
                         >;
                 };
 
-                numpad_layer {
-                        bindings = <
-&trans   &none         &kp  F2       &kp  ESC      &kp  F4       &none                                                           &kp  KP_PLUS    &kp  KP_N7   &kp  KP_N8   &kp  KP_N9      &kp  KP_MINUS     &none
-&trans   &kp  LPAR     &kp  DEL      &kp  UP       &kp  ENT      &kp  RPAR                                                       &kp  KP_MINUS   &kp  KP_N4   &kp  KP_N5   &kp  KP_N8      &kp  KP_ASTERISK  &kp  KP_ENTER
-&trans   &kp  LT       &kp  LEFT     &kp  DOWN     &kp  RIGHT    &kp GT        &trans                                   &trans   &kp  EQUAL      &kp  KP_N1   &kp  KP_N2   &kp  KP_N7      &kp  KP_SLASH     &kp  KP_DOT
-                                                   &trans        &trans        &trans    &tog L_NUMPAD         &trans   &trans   &kp  KP_N0      &kp  KP_DOT
-                        >;
-                };
-
         };
 };
