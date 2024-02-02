@@ -32,7 +32,7 @@
 #define F_ZONE_1 LC(LA(LG(1)))
 #define F_ZONE_2 LC(LA(LG(2)))
 
-#define L_ADJUST SEMI
+#define COL_ADJ  L_ADJUST SEMI
 
 #define SYSPROP  LG(PAUSE_BREAK)
 
