@@ -94,13 +94,5 @@
                         >;
                 };
 
-                adjust_layer {
-                        bindings = <
-&none         &none         &none         &none         &kp LS(LA(N5))   &kp LS(LA(N4))                                                               &out  OUT_USB     &none              &none            &none          &none           &none
-&sys_reset    &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &kp LS(LA(N9))   &kp LS(LA(N8))                                                               &out  OUT_BLE     &none              &none            &none          &none           &sys_reset
-&none         &none         &none         &none         &kp LS(LA(N7))   &kp LS(LA(N6))          &bt BT_CLR                          &none            &none             &none              &none            &none          &none           &bootloader
-                                                        &none            &none                   &none        &none    &trans        &trans           &trans            &trans
-                        >;
-                };
         };
 };
