@@ -85,5 +85,22 @@
                         >;
                 };
 
+                numpad_layer {
+                        bindings = <
+&trans   &none         &kp  F2       &kp  ESC      &kp  F4       &none                                                           &kp  KP_PLUS    &kp  KP_N7   &kp  KP_N8   &kp  KP_N9      &kp  KP_MINUS     &none
+&trans   &kp  LPAR     &kp  DELETE   &kp  UP       &kp  ENTER    &kp  RPAR                                                       &kp  KP_MINUS   &kp  KP_N4   &kp  KP_N5   &kp  KP_N6      &kp  KP_ASTERISK  &kp  KP_ENTER
+&trans   &kp  LT       &kp  LEFT     &kp  DOWN     &kp  RIGHT    &kp GT        &trans                                   &trans   &kp  EQUAL      &kp  KP_N1   &kp  KP_N2   &kp  KP_N3      &kp  KP_SLASH     &kp  KP_DOT
+                                                   &trans        &trans        &trans    &tog L_NUMPAD         &trans   &trans   &kp  KP_N0      &kp  KP_DOT
+                        >;
+                };
+
+                adjust_layer {
+                        bindings = <
+&none         &none         &none         &none         &kp LS(LA(N5))   &kp LS(LA(N4))                                                               &out  OUT_USB     &none              &none            &none          &none           &none
+&sys_reset    &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &kp LS(LA(N9))   &kp LS(LA(N8))                                                               &out  OUT_BLE     &none              &none            &none          &none           &sys_reset
+&none         &none         &none         &none         &kp LS(LA(N7))   &kp LS(LA(N6))          &bt BT_CLR                          &none            &none             &none              &none            &none          &none           &bootloader
+                                                        &none            &none                   &none        &none    &trans        &trans           &trans            &trans
+                        >;
+                };
         };
 };
