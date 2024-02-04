@@ -55,14 +55,14 @@
                 qw_gui {
                         timeout-ms = <50>;
                         key-positions = <1 2>;
-                        layers = <0>
+                        layers = <0>;
                         slow-release;
                         bindings = <&kp LGUI>;
                 };
                 rt_numpad {
                         timeout-ms = <50>;
                         key-positions = <32 46>;
-                        layers = <0>
+                        layers = <0>;
                         slow-release;
                         bindings = <&tog L_NUMBERS>;
                 };
