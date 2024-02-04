@@ -32,6 +32,14 @@
 #define F_ZONE_1 LC(LA(LG(1)))
 #define F_ZONE_2 LC(LA(LG(2)))
 
+#define LI_ON LS(LA(N5))
+#define CA_ON LS(LA(N9))
+#define ST_ON LS(LA(N7))
+
+#define LI_OFF LS(LA(N4))
+#define CA_OFF LS(LA(N8))
+#define ST_OFF LS(LA(N6))
+
 #define SYSPROP  LG(PAUSE_BREAK)
 
 / {
@@ -43,12 +51,12 @@
 &kp  TAB      &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                          &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P         &kp  EQUAL
 &kp  LSHIFT   &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                          &kp  H        &kp  J        &kp  K        &kp  L        &lt  L_ADJUST SEMI   &kp  SINGLE_QUOTE  
 &kp  LCTRL    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &mo  L_ADJUST                                       &caps_word    &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH     &kp  BACKSLASH
-                                                        &kp  LGUI     &kp  LALT     &sk  SPACE     &mo  L_NAVI           &mo  L_SYMBOLS &kp  BSPC     &kp  RALT     &kp  RGUI
+                                                        &kp  LGUI     &kp  LALT     &kp  SPACE     &mo  L_NAVI           &mo  L_SYMBOLS &kp  BSPC     &kp  RALT     &kp  RGUI
                         >;
                 };
 
                 symbols_layer {
-                        bindings = <
+                        bindings = <    
 &trans   &kp  EXCL     &kp  AT       &kp  LBKT     &kp  RBKT     &kp  PIPE                                                                &kp  PLUS     &kp  AMPS     &kp  ASTRK    &none         &none         &none
 &trans   &kp  HASH     &kp  DOLLAR   &kp  LPAR     &kp  RPAR     &kp  GRAVE                                                               &kp  MINUS    &sk  RCTRL    &sk  RSHIFT   &sk  RALT     &sk  RGUI     &none
 &trans   &kp  PERCENT  &kp  CARET    &kp  LBRC     &kp  RBRC     &kp  TILDE    &trans                                            &trans   &kp  EQUAL    &none         &kp  LT       &kp  GT       &none         &none
@@ -85,19 +93,19 @@
 
                 numpad_layer {
                         bindings = <
-&trans   &none         &kp  F2       &kp  ESC      &kp  F4       &none                                                           &kp  KP_PLUS    &kp  KP_N7   &kp  KP_N8   &kp  KP_N9      &kp  KP_MINUS     &none
-&trans   &kp  LPAR     &kp  DELETE   &kp  UP       &kp  ENTER    &kp  RPAR                                                       &kp  KP_MINUS   &kp  KP_N4   &kp  KP_N5   &kp  KP_N6      &kp  KP_ASTERISK  &kp  KP_ENTER
-&trans   &kp  LT       &kp  LEFT     &kp  DOWN     &kp  RIGHT    &kp GT        &trans                                   &trans   &kp  EQUAL      &kp  KP_N1   &kp  KP_N2   &kp  KP_N3      &kp  KP_SLASH     &kp  KP_DOT
+&trans   &none         &kp  F2       &kp  ESC      &kp  F4       &none                                                           &kp  KP_PLUS    &kp  KP_N7   &kp  KP_N8   &kp  KP_N9     &kp  KP_MINUS     &none
+&trans   &kp  LPAR     &kp  DELETE   &kp  UP       &kp  ENTER    &kp  RPAR                                                       &kp  KP_MINUS   &kp  KP_N4   &kp  KP_N5   &kp  KP_N6     &kp  KP_ASTERISK  &kp  KP_ENTER
+&trans   &kp  LT       &kp  LEFT     &kp  DOWN     &kp  RIGHT    &kp GT        &trans                                   &trans   &kp  EQUAL      &kp  KP_N1   &kp  KP_N2   &kp  KP_N3     &kp  KP_SLASH     &kp  KP_DOT
                                                    &trans        &trans        &trans    &tog L_NUMPAD         &trans   &trans   &kp  KP_N0      &kp  KP_DOT
                         >;
                 };
 
                 adjust_layer {
                         bindings = <
-&none         &none         &none         &none         &kp LS(LA(N5))   &kp LS(LA(N4))                                                               &out  OUT_USB     &none              &none            &none          &none           &none
-&sys_reset    &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &kp LS(LA(N9))   &kp LS(LA(N8))                                                               &out  OUT_BLE     &none              &none            &none          &none           &sys_reset
-&none         &none         &none         &none         &kp LS(LA(N7))   &kp LS(LA(N6))          &bt BT_CLR                          &none            &none             &none              &none            &none          &none           &bootloader
-                                                        &none            &none                   &none        &none    &trans        &trans           &trans            &trans
+&sys_reset    &none         &none         &none         &kp LI_ON   &kp LI_OFF                                                   &out  OUT_USB   &none        &none        &none          &none           &sys_reset
+&none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &kp CA_ON   &kp CA_OFF                                                   &out  OUT_BLE   &none        &none        &LG(L)         &none           &kp C_SLEEP
+&&none        &none         &none         &none         &kp ST_ON   &kp ST_OFF  &bt BT_CLR                              &none    &none           &none        &none        &none          &none           &none
+                                                        &none       &none       &none    &bootloader      &bootloader   &none    &none           &none
                         >;
                 };
         };
