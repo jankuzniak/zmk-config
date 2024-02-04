@@ -127,7 +127,7 @@
                 adjust_layer {
                         bindings = <
 &sys_reset    &none         &none         &none         &kp LI_ON   &kp LI_OFF                                                   &out  OUT_USB   &none        &none        &none          &none           &sys_reset
-&none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &kp CA_ON   &kp CA_OFF                                                   &out  OUT_BLE   &none        &none        &LG(L)         &none           &kp C_SLEEP
+&none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &kp CA_ON   &kp CA_OFF                                                   &out  OUT_BLE   &none        &none        &tg LG(L)      &none           &kp C_SLEEP
 &none         &none         &none         &none         &kp ST_ON   &kp ST_OFF  &bt BT_CLR                              &none    &none           &none        &none        &none          &none           &none
                                                         &none       &none       &none    &bootloader      &bootloader   &none    &none           &none
                         >;
