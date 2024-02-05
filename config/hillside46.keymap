@@ -131,7 +131,7 @@
                         bindings = <
 &bootloader   &none           &none           &none           &kp LI_ON    &kp LI_OFF                                                    &out  OUT_USB       &none               &none               &none       &none   &bootloader
 &none         &bt  BT_SEL 0   &bt  BT_SEL 1   &bt  BT_SEL 2   &kp CA_ON    &kp CA_OFF                                                    &out  OUT_BLE       &none               &none               &kp LG(L)   &none   &kp C_SLEEP
-&sys_reset    &none           &none           &none           &kp ST_ON    &kp ST_OFF   &bt BT_CLR                              &none    &ext_power EP_TOG   &ext_power EP_ON    &ext_power EP_OFF   &none       &none   &sys_reset
+&sys_reset    &bt  BT_SEL 3   &bt  BT_SEL 4   &none           &kp ST_ON    &kp ST_OFF   &bt BT_CLR                              &none    &ext_power EP_TOG   &ext_power EP_ON    &ext_power EP_OFF   &none       &none   &sys_reset
                                                               &none        &none        &none    &bootloader      &bootloader   &none    &none               &none
                         >;
                 };
