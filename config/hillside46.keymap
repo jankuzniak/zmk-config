@@ -78,7 +78,7 @@
 &kp  TAB      &kp  Q   &kp  W        &kp  E       &kp  R         &kp  T                                                                      &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P               &kp  EQUAL
 &kp  LSHIFT   &kp  A   &kp  S        &kp  D       &kp  F         &kp  G                                                                      &kp  H        &kp  J        &kp  K        &kp  L        &lt  L_ADJUST SEMI   &kp  SINGLE_QUOTE
 &kp  LCTRL    &kp  Z   &kp  X        &kp  C       &kp  V         &kp  B        &kp  LG(LS(S))                                  &caps_word    &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH           &kp  BACKSLASH
-                                                  &kp  LGUI      &kp  LALT     &kp  SPACE   &mo  L_NAVI       &mo  L_SYMBOLS   &kp  BSPC     &kp  RALT     &kp  RGUI
+                                                  &mo  L_NUMBERS &kp  LALT     &kp  SPACE   &mo  L_NAVI       &mo  L_SYMBOLS   &kp  BSPC     &kp  RALT     &kp  RGUI
                         >;
                 };
 
