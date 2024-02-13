@@ -67,15 +67,20 @@
                         bindings = <&tog L_NUMBERS>;
                 };
         };
-        display {
-                compatible = "solomon,ssd1306fb-i2c";
-                solomon,width = <128>;
-                solomon,height = <64>;
-                solomon,com-invdir = <1>;
-                solomon,prechargep1 = <0x1>;
-                solomon,prechargep2 = <0xf>;
-                solomon,page-offset = <0>;
-        };
+        ssd1306@3c {                                                                          
+                compatible = "solomon,ssd1306fb";                                             
+                reg = <0x3c>;                                                                 
+                label = "SSD1306";                                                            
+                width = <128>;                                                                
+                height = <64>;                                                                
+                segment-offset = <0>;                                                         
+                page-offset = <0>;                                                            
+                display-offset = <0>;                                                         
+                multiplex-ratio = <63>;                                                       
+                segment-remap;                                                                
+                com-invdir;                                                                   
+                prechargep = <0x22>;                                                          
+        };                                                                                    
         keymap {
                 compatible = "zmk,keymap";
 
