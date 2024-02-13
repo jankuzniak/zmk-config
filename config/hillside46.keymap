@@ -68,14 +68,15 @@
                 };
         };
         display {
-                compatible = "solomon,ssd1306fb";
+                compatible = "solomon,ssd1306fb-i2c";
                 reg = <0x3c>;
-                pwms = <&pwm 4 3000>;
-                reset-gpios = <&gpio2 7>;
-                solomon,com-lrremap;
-                solomon,com-invdir;
-                solomon,com-offset = <32>;
-                solomon,lookup-table = /bits/ 8 <0x3f 0x3f 0x3f 0x3f>;
+                reset-gpios = <&gpio 4 0>;
+                solomon,width = <128>;
+                solomon,height = <64>;
+                solomon,com-invdir = <1>;
+                solomon,prechargep1 = <0x1>;
+                solomon,prechargep2 = <0xf>;
+                solomon,page-offset = <0>;
         };
         keymap {
                 compatible = "zmk,keymap";
