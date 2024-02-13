@@ -69,6 +69,13 @@
         };
         display {
                 compatible = "solomon,ssd1306fb";
+                reg = <0x3c>;
+                pwms = <&pwm 4 3000>;
+                reset-gpios = <&gpio2 7>;
+                solomon,com-lrremap;
+                solomon,com-invdir;
+                solomon,com-offset = <32>;
+                solomon,lookup-table = /bits/ 8 <0x3f 0x3f 0x3f 0x3f>;
         };
         keymap {
                 compatible = "zmk,keymap";
