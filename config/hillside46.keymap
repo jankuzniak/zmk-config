@@ -17,7 +17,7 @@
 #define  L_SWITCH       3
 #define  L_NUMBERS      4
 #define  L_NUMPAD       5
-#define  L_ADJUST       6
+#define  L_CONTROL       6
 
 #define QWERTY_L 0
 #define DVORAK_L 1
@@ -75,9 +75,9 @@
 
                 default_layer {
                         bindings = <
-&kp  TAB      &kp  Q   &kp  W        &kp  E       &kp  R         &kp  T                                                                      &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P               &kp  EQUAL
-&kp  LSHIFT   &kp  A   &kp  S        &kp  D       &kp  F         &kp  G                                                                      &kp  H        &kp  J        &kp  K        &kp  L        &lt  L_ADJUST SEMI   &kp  SINGLE_QUOTE
-&kp  LCTRL    &kp  Z   &kp  X        &kp  C       &kp  V         &kp  B        &kp  LG(LS(S))                                  &caps_word    &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH           &kp  BACKSLASH
+&kp  TAB      &kp  Q   &kp  W        &kp  E       &kp  R         &kp  T                                                                      &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P                &kp  EQUAL
+&kp  LSHIFT   &kp  A   &kp  S        &kp  D       &kp  F         &kp  G                                                                      &kp  H        &kp  J        &kp  K        &kp  L        &lt  L_CONTROL SEMI   &kp  SINGLE_QUOTE
+&kp  LCTRL    &kp  Z   &kp  X        &kp  C       &kp  V         &kp  B        &kp  LG(LS(S))                                  &caps_word    &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH            &kp  BACKSLASH
                                                   &mo  L_NUMBERS &kp  LALT     &kp  SPACE   &mo  L_NAVI       &mo  L_SYMBOLS   &kp  BSPC     &kp  RALT     &kp  RGUI
                         >;
                 };
@@ -127,7 +127,7 @@
                         >;
                 };
 
-                adjust_layer {
+                control_layer {
                         bindings = <
 &bootloader   &none           &none           &none           &kp LI_ON    &kp LI_OFF                                                    &out  OUT_USB       &none               &none               &none       &none   &bootloader
 &none         &bt  BT_SEL 0   &bt  BT_SEL 1   &bt  BT_SEL 2   &kp CA_ON    &kp CA_OFF                                                    &out  OUT_BLE       &none               &none               &kp LG(L)   &none   &kp C_SLEEP
