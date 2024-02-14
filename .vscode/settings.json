@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.keymap": "c",
+        "chrono": "c",
+        "*.overlay": "c"
+    }
+}
