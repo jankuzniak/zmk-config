@@ -9,13 +9,15 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+    default y
 endif
 
 if SHIELD_HILLSIDE46_LEFT || SHIELD_HILLSIDE46_RIGHT
 
+
 config ZMK_SPLIT
     default y
-
 
 if ZMK_DISPLAY
 
@@ -23,9 +25,6 @@ config I2C
     default y
 
 config SSD1306
-    default y
-
-config SSD1306_REVERSE_MODE
     default y
 
 endif # ZMK_DISPLAY
