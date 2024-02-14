@@ -68,7 +68,7 @@
                 };
         };
         display {
-                compatible = "solomon,ssd1306fb-i2c";
+                compatible = "solomon,ssd1306fb";
         };
         keymap {
                 compatible = "zmk,keymap";
