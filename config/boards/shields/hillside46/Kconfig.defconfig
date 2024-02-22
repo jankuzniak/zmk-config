@@ -9,7 +9,7 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
-endif
+endif # left
 
 if SHIELD_HILLSIDE46_LEFT || SHIELD_HILLSIDE46_RIGHT
 
@@ -18,7 +18,6 @@ config ZMK_SPLIT
 
 config ZMK_USB
     default y
-endif
 
 if ZMK_DISPLAY
 
