@@ -3,8 +3,8 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-  artifacts:
-    when: on_failure
-    paths:
-      - ${{ env.build_dir }}/zephyr/include/generated/devicetree_generated.h
-      - ${{ env.build_dir }}/zephyr/zephyr.dts
+    artifacts:
+      when: on_failure
+      paths:
+        - ${{ env.build_dir }}/zephyr/include/generated/devicetree_generated.h
+        - ${{ env.build_dir }}/zephyr/zephyr.dts
