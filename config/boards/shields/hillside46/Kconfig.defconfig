@@ -16,9 +16,6 @@ if SHIELD_HILLSIDE46_LEFT || SHIELD_HILLSIDE46_RIGHT
 config ZMK_SPLIT
     default y
 
-config ZMK_USB
-    default y
-
 if ZMK_DISPLAY
 
 config I2C
