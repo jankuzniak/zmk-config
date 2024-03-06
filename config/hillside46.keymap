@@ -67,9 +67,6 @@
                         bindings = <&tog L_NUMBERS>;
                 };
         };
-        display {
-                compatible = "solomon,ssd1306fb";
-        };
         keymap {
                 compatible = "zmk,keymap";
 

@@ -2,6 +2,7 @@
     "files.associations": {
         "*.keymap": "c",
         "chrono": "c",
-        "*.overlay": "c"
+        "*.overlay": "c",
+        "random": "c"
     }
 }
