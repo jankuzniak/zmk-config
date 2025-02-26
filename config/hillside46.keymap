@@ -67,6 +67,18 @@
                         bindings = <&tog L_NUMBERS>;
                 };
         };
+        macros {
+                l_navi_number: l_navi_number {
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                <&macro_press &mo L_NAVI>
+                                , <&tg L_NUMBERS>
+                                , <&macro_pause_for_release>
+                                , <&macro_release &mo L_NAVI>
+                                ;   
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -111,7 +123,7 @@
 &trans   &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                    &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR      &kp  RPAR     &kp  UNDER
 &trans   &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                         &kp  N6       &kp  N7       &kp  N8       &kp  N9        &kp  N0       &kp  MINUS
 &trans   &none         &none         &none         &none         &none         &trans                                   &trans   &kp  EQUAL    &kp  PLUS     &kp  COMMA    &kp  DOT       &kp  SLASH    &kp  ASTRK
-                                                   &trans        &trans        &trans    &tog L_NUMBERS        &trans   &trans   &trans        &trans
+                                                   &trans        &trans        &trans    &l_navi_number        &trans   &trans   &trans        &trans
                         >;
                 };
 
