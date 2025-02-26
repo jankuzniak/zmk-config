@@ -73,7 +73,7 @@
                         #binding-cells = <0>;
                         bindings =
                                 <&macro_press &mo L_NAVI>
-                                , <&tg L_NUMBERS>
+                                , <&tog L_NUMBERS>
                                 , <&macro_pause_for_release>
                                 , <&macro_release &mo L_NAVI>
                                 ;   
