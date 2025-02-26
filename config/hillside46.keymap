@@ -71,7 +71,7 @@
                 l_navi_number: l_navi_number {
                         compatible = "zmk,behavior-macro";
                         #binding-cells = <0>;
-                        bindings
+                        bindings =
                                 <&macro_press &mo L_NAVI>
                                 , <&tg L_NUMBERS>
                                 , <&macro_pause_for_release>
